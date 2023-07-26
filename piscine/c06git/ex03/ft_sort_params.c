@@ -6,7 +6,7 @@
 /*   By: nbiron <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/19 16:28:29 by nbiron            #+#    #+#             */
-/*   Updated: 2023/07/24 10:29:08 by nbiron           ###   ########.fr       */
+/*   Updated: 2023/07/26 18:03:19 by nbiron           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,11 +73,11 @@ int	main(int argc, char **argv)
 
 	i = 1;
 	ft_sort_char_tab(argv, argc);
-	i = 1;
 	while (i < argc)
 	{
 		ft_putstr(argv[i]);
 		i++;
 		ft_putchar('\n');
 	}
+	return (0);
 }
