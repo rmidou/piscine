@@ -23,15 +23,16 @@ int	ft_is_prime(int nb)
 			return (0);
 		i++;
 	}
-	return (1);
-}
-
-int	ft_find_next_prime(int nb)
-{
-	while nb <= 2147483647
-	{
-		while (ft_is_prime(nb) != 1)
-			nb++ ;
+	return (nb);
 	}
-		return (nb);
+	
+int		ft_find_next_prime(int nb)
+{
+	while (nb <= 2147483647)
+	{
+		if (ft_is_prime(nb))
+			return (nb);
+		nb++;
+	}
+	return (2147483647);
 }
